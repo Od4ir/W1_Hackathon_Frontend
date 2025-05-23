@@ -53,10 +53,14 @@ export default function Chat() {
         <div className="flex flex-col h-screen bg-[#f7f9f8]">
         {/* Header */}
         <div className="flex items-center justify-between p-4">
-            <div className="flex items-center gap-2">
-            <ArrowLeft className="text-[#00252F]" />
-            <span className="text-[#00252F] text-lg font-medium">Voltar</span>
-            </div>
+            <button
+                className="flex items-center gap-2"
+                onClick={() => window.location.href = "/"}
+                type="button"
+            >
+                <ArrowLeft className="text-[#00252F]" />
+                <span className="text-[#00252F] text-lg font-medium">Voltar</span>
+            </button>
             <Button variant="ghost" className="text-white bg-[#00252F] rounded-lg px-4 py-1 text-sm font-medium">
             TELA CHAT
             </Button>
